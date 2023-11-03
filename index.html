@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blur-property</title>
+  <style>
+    * {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url("https://wallpaperaccess.com/full/360431.jpg") no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(3px);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    #navbar {
+      position: absolute;
+      top: 1%;
+      right: 1%;
+      padding: 15px;
+      text-align: center;
+      display: flex;
+    }
+
+    #navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    #navbar ul li {
+      margin-right: 10px;
+    }
+
+    #navbar ul li a {
+      text-decoration: none;
+      color: #ffffff; /* Change font color to white */
+      font-size: 20px;
+      text-transform: capitalize;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #navbar ul li a:hover {
+      background-color: #007BFF;
+      color: #ffffff; /* Change hover font color to white */
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+    }
+
+    #logo {
+      position: absolute;
+      top: 1%;
+      left: 1%;
+      font-size: 36px;
+      color: #007BFF;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      transition: color 0.3s; /* Add smooth transition for logo color */
+    }
+
+    #logo span {
+      color: white;
+    }
+
+    #logo:hover {
+      color: #0056b3; /* Change logo color on hover */
+    }
+
+    .login-form {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-form label,
+    .login-form input {
+      display: block;
+      margin: 10px auto;
+      color: #333; /* Change font color for input elements */
+    }
+
+    .login-form button {
+      background-color: #007BFF;
+      color: #fff; /* Change font color to white */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline;
+      transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+    }
+
+    .login-form button:hover {
+      background-color: #0056b3; /* Change background color on hover */
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .register-link a {
+      text-decoration: none;
+      color: #007BFF;
+      transition: color 0.3s; /* Add smooth transition for link color */
+    }
+
+    .register-link a:hover {
+      color: #0056b3; /* Change link color on hover */
+    }
+
+    .footer {
+      text-align: center;
+      color: white;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+    }
+
+    @media (max-width: 768px) {
+      .login-form {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="logo">Sh<span>aaz</span>sk</div>
+
+  <div class="login-form">
+    <h2>Login here</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your username">
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <button type="button">Sign In</button>
+    <button type="button">Sign Up</button>
+    <div class="register-link">
+      If you don't have an account, <a href="#">click here</a> to create one.
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; Designed by Shaazsk<sup>2</sup>
+  </div>
+</body>
+</html>
